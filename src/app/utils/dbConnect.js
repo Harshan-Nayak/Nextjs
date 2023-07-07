@@ -2,8 +2,16 @@ const mongoose = require('mongoose')
 
 
 export default async function dbConnect(){
-await mongoose.connect("mongodb://127.0.0.1:27017/nextProducts",{
+await mongoose.connect(process.env.UR,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
 }
+
+
+
+
+
+ 
+
+ 
